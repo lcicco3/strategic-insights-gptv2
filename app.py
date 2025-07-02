@@ -26,10 +26,10 @@ load_dotenv()
 # Add src to path for imports
 sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
 
-from src.services.pubmed_service import PubMedService
-from src.services.clinicaltrials_service import ClinicalTrialsService
-from src.services.vector_service import VectorService
-from src.services.insights_service import InsightsService
+from services.pubmed_service import PubMedService
+from services.clinicaltrials_service import ClinicalTrialsService
+from services.vector_service import VectorService
+from services.insights_service import InsightsService
 
 # Initialize Flask app
 app = Flask(__name__)
