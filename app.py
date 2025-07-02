@@ -9,7 +9,12 @@ vector storage with Pinecone, and AI-powered strategic insights generation.
 
 import sys
 import os
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
+# Force absolute path to the src folder
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+SRC_PATH = os.path.join(BASE_DIR, 'src')
+if SRC_PATH not in sys.path:
+    sys.path.insert(0, SRC_PATH)
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 from dotenv import load_dotenv
