@@ -1,0 +1,29 @@
+# Strategic Insights GPT Backend Configuration
+
+# OpenAI Configuration
+OPENAI_API_KEY=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
+OPENAI_MODEL=text-embedding-3-small
+
+# Pinecone Configuration
+PINECONE_API_KEY=pcsk_6vNbNU_QtCTLt3adPr7FXgSVmCsp9T7PMMrkB6tXtrC6Hud4s2SBbKxzxbsje3yX3Ass5v
+PINECONE_ENVIRONMENT=us-east-1
+PINECONE_INDEX_NAME=rweproposalstrategy
+
+# PubMed Configuration
+PUBMED_EMAIL=lauren.ciccomascolo@gmail.com
+PUBMED_API_KEY=8a09baf35834175f43dcde255a43306ee008
+
+# Flask Configuration
+FLASK_ENV=production
+FLASK_DEBUG=False
+PORT=5000
+
+# Database Configuration (optional)
+DATABASE_URL=sqlite:///strategic_insights.db
+
+# Security
+SECRET_KEY=strategic-insights-secret-key-2025
+
+# Logging
+LOG_LEVEL=INFO
+
