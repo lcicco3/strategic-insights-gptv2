@@ -7,8 +7,9 @@ It provides endpoints for PubMed and ClinicalTrials.gov data integration,
 vector storage with Pinecone, and AI-powered strategic insights generation.
 """
 
-import os
 import sys
+import os
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 from dotenv import load_dotenv
